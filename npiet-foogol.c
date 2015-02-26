@@ -463,29 +463,29 @@ static struct c_color {
   int c_idx;			/* our internal color index */
 } c_colors [] = {
 
-  { 0xFFC0C0, "light red", "lR", 0 },
-  { 0xFFFFC0, "light yellow", "lY", 1 },
-  { 0xC0FFC0, "light green", "lG", 2 },
-  { 0xC0FFFF, "light cyan", "lC", 3 },
-  { 0xC0C0FF, "light blue", "lB", 4 },
-  { 0xFFC0FF, "light magenta", "lM", 5 },
+  { 0xCE4019, "light red", "lR", 0 },
+  { 0xDEAC22, "light yellow", "lY", 1 },
+  { 0x548832, "light green", "lG", 2 },
+  { 0xBFECEE, "light cyan", "lC", 3 },
+  { 0x3E67A7, "light blue", "lB", 4 },
+  { 0x962E5C, "light magenta", "lM", 5 },
 
-  { 0xFF0000, "red", "nR", 6 },
-  { 0xFFFF00, "yellow", "nY", 7 },
-  { 0x00FF00, "green", "nG", 8 },
-  { 0x00FFFF, "cyan", "nC", 9 },
-  { 0x0000FF, "blue", "nB", 10 },
-  { 0xFF00FF, "magenta", "nM", 11 },
+  { 0xC92B00, "red", "nR", 6 },
+  { 0xDBA30A, "yellow", "nY", 7 },
+  { 0x427B1C, "green", "nG", 8 },
+  { 0x95E0E3, "cyan", "nC", 9 },
+  { 0x29579E, "blue", "nB", 10 },
+  { 0x8B174A, "magenta", "nM", 11 },
 
-  { 0xC00000, "dark red", "dR", 12 },
-  { 0xC0C000, "dark yellow", "dY", 13 },
-  { 0x00C000, "dark green", "dG", 14 },
-  { 0x00C0C0, "dark cyan", "dC", 15 },
-  { 0x0000C0, "dark blue", "dB", 16 },
-  { 0xC000C0, "dark magenta", "dM", 17 },
+  { 0xB42600, "dark red", "dR", 12 },
+  { 0xC59209, "dark yellow", "dY", 13 },
+  { 0x3B6E19, "dark green", "dG", 14 },
+  { 0x86C9CC, "dark cyan", "dC", 15 },
+  { 0x244E8E, "dark blue", "dB", 16 },
+  { 0x7D1442, "dark magenta", "dM", 17 },
 
-  { 0xFFFFFF, "white", "WW", 18 },
-  { 0x000000, "black", "BB", 19 }
+  { 0xF4F1FF, "white", "WW", 18 },
+  { 0x151516, "black", "BB", 19 }
 };
 
 

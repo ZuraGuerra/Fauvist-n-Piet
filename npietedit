@@ -120,14 +120,14 @@ set n_light 3
 ##
 array set colors {
 
-   0  "#FFC0C0"   1  "#FFFFC0"   2  "#C0FFC0"
-   3  "#C0FFFF"   4  "#C0C0FF"   5  "#FFC0FF"
+   0  "#CE4019"   1  "#DEAC22"   2  "#548832"
+   3  "#BFECEE"   4  "#3E67A7"   5  "#962E5C"
 
-   6  "#FF0000"   7  "#FFFF00"   8  "#00FF00"
-   9  "#00FFFF"  10  "#0000FF"  11  "#FF00FF"
+   6  "#C92B00"   7  "#DBA30A"   8  "#427B1C"
+   9  "#95E0E3"  10  "#29579E"  11  "#8B174A"
 
-  12  "#C00000"  13  "#C0C000"  14  "#00C000"
-  15  "#00C0C0"  16  "#0000C0"  17  "#C000C0"
+  12  "#B42600"  13  "#C59209"  14  "#3B6E19"
+  15  "#86C9CC"  16  "#244E8E"  17  "#7D1442"
 }
 
 
@@ -174,9 +174,9 @@ proc idx2col {idx} {
     global colors
 
     if {$idx == 18} { 
-	return "#000000"
+	return "#151516"
     } elseif {$idx == 19} {
-	return "#ffffff"
+	return "#F4F1FF"
     } elseif {$idx >= 0 && $idx < 18} {
 	return $colors($idx)
     } else {
@@ -190,10 +190,10 @@ proc col2idx {r g b} {
     set str [string toupper [format "#%02x%02x%02x" $r $g $b]]
 
     ## special case black and white:
-    if {$str == "#000000"} {
+    if {$str == "#151516"} {
 	return 18
     }
-    if {$str == "#FFFFFF"} {
+    if {$str == "#F4F1FF"} {
 	return 19
     }
 
@@ -227,10 +227,10 @@ proc paint_border {frame x y flag zoom} {
 
     if {$flag == 0} {
 	set fill ""
-	set outline "#ffffff"
+	set outline "#F4F1FF"
     } else {
 	set fill ""
-	set outline "#000000"
+	set outline "#151516"
     }
     $frame create rectangle $x $y [expr $x + $zoom] \
 	    [expr $y + $zoom] -fill $fill -outline $outline
