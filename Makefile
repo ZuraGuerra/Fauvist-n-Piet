@@ -41,7 +41,7 @@ LDFLAGS = -g
 ##
 ## libraries:
 ##
-LIBS =  -lgd -lz -lm $(CYG_LIBS)
+LIBS =  -lgd -lpng -lz -lm $(CYG_LIBS)
 
 ##
 ## installation commands:
